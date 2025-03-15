@@ -126,24 +126,6 @@ public class Board extends BackgroundPanel {
 		}
 	}
 
-	public int countPlayerCards(Player player) {
-		int points = 0;
-		for (int lin = 0; lin < 3; lin++) {
-			for (int col = 0; col < 3; col++) {
-				CardComponent cardComponent = boardButtons[lin][col];
-
-				if (cardComponent != null && cardComponent.getInfo() != null) {
-					PlayerCardData playerCardData = cardComponent.getInfo();
-
-					if (playerCardData.getOwner().equals(player)) {
-						points++;
-					}
-				}
-			}
-		}
-		return points;
-	}
-	
 	public PlayerCardData getCard(int row, int col) {
 		return boardButtons[row][col].getInfo();
 	}
@@ -164,4 +146,21 @@ public class Board extends BackgroundPanel {
 		return this.positionListeners;
 	}
 
+	public int countPlayerCards(Player player) {
+		int points = 0;
+		for (int lin = 0; lin < 3; lin++) {
+			for (int col = 0; col < 3; col++) {
+				CardComponent cardComponent = boardButtons[lin][col];
+
+				if (cardComponent != null && cardComponent.getInfo() != null) {
+					PlayerCardData playerCardData = cardComponent.getInfo();
+
+					if (playerCardData.getOwner().equals(player)) {
+						points++;
+					}
+				}
+			}
+		}
+		return points;
+	}
 }

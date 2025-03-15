@@ -71,11 +71,10 @@ public class TripleTriadUI extends JFrame {
 				initializeGame(cards, nomeJogador1, nomeJogador2);
 			}
 		});
-		
+
 		add(initialScreen, BorderLayout.CENTER);
 		soundServices.getSoundService("main-theme").playThenLoop("theme-loop.wav");
 		setVisible(true);
-		
 	}
 
 	private void initializeGame(List<CardData> cards, String nomeJogador1, String nomeJogador2) {
@@ -90,7 +89,7 @@ public class TripleTriadUI extends JFrame {
 
 		JPanel boardWrapper = new JPanel(new BorderLayout());
 
-		
+		board = new Board("/back.png", cards);
 		boardWrapper.add(board, BorderLayout.CENTER);
 		boardWrapper.setBorder(BorderFactory.createTitledBorder("Campo"));
 
