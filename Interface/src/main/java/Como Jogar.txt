@@ -1,0 +1,13 @@
+COMO JOGAR:
+
+1. Após a distribuição, os jogadores devem trocar suas cartas entre si antes de iniciar o jogo.
+
+2. Início da rodada: O jogador da vez deve:
+   - Selecionar uma carta de sua mão e posicioná-la em um espaço vazio no tabuleiro.
+   - Ao concluir, clicar em "Esconder Cartas" para que o próximo jogador não possa vê-las.
+
+3. Turnos seguintes:
+   - O próximo jogador inicia seu turno clicando em "Iniciar Turno" e confirma clicando em "OK" para que suas cartas possam ser reveladas.
+   - Ele então escolhe sua jogada e, ao finalizar, clica em "Esconder Cartas" novamente para manter as cartas ocultas até a próxima rodada.
+
+4. O processo se repete até que todas as cartas sejam posicionadas e o jogo termine.
